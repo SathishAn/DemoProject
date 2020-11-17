@@ -12,12 +12,12 @@ import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
-public class DataProvider {
+public class DataTestProvider {
 	private Map<String, String> testData = new HashMap<String, String>();
 	
-	public void readTestData(String scenarioName, String sheetName) throws IOException {
-		String path = "./src/test/resources/TestData.xlsx"; 
-		FileInputStream file = new FileInputStream(new File(path));
+	public Map<String, String> readTestData(String scenarioName, String sheetName) throws IOException {
+		String path = "./datatable/TestData.xlsx"; 
+		FileInputStream file = new FileInputStream(new File(path)); 
 		XSSFWorkbook workbook = new XSSFWorkbook(file);
 		XSSFSheet sheet = workbook.getSheet(sheetName);
 		Row Firstrow = sheet.getRow(0);
@@ -31,10 +31,8 @@ public class DataProvider {
 				}
 			}			
 		}
-		
+		return testData;		
 	}
-	
-	
 	
 	public Map<String, String> getTestData(){
 		return this.testData;

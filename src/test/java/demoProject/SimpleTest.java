@@ -9,14 +9,14 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-import utilities.DataProvider;
+import utilities.DataTestProvider;
 
 
 public class SimpleTest {
 	public static void main(String[] args) throws IOException {
 		Map<String, String> datas;
-		DataProvider dp = new DataProvider(); 
-		dp.readTestData("Test001", "Credential");
+		DataTestProvider dp = new DataTestProvider(); 
+		dp.readTestData("Test001", "Credential"); 
 		datas = dp.getTestData();
 		String appURL = "https://github.com/login";
 		String chromeDriverExe ="D:\\Workspace\\Demo\\drivers\\chromedriver.exe";	 
