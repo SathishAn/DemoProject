@@ -9,7 +9,8 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.relevantcodes.extentreports.ExtentTest;
 
-import utilities.CoreTapWrappers;
+import wrappers.CoreTapWrappers;
+
 
 public class LoginPage extends CoreTapWrappers  {
 	
@@ -18,8 +19,7 @@ public class LoginPage extends CoreTapWrappers  {
 		PageFactory.initElements(this.driver, this);
 		if(!verifyTitle("Sign in to GitHub · GitHub")){
 			reportStep("This is not Login Page", "FAIL");
-		}
-		
+		}		
 	}
 	@FindBy(how=How.ID, using="login_field") WebElement userName;
 	

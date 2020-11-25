@@ -7,7 +7,7 @@ import org.openqa.selenium.WebDriver;
 
 import cucumber.api.java.it.Ma;
 import pages.LoginPage;
-import utilities.CoreTapWrappers;
+
 
 public class ReusableModule {
 		private Map<String, String> testData = new HashMap<String, String>();

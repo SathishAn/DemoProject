@@ -2,41 +2,27 @@
 <testng-results skipped="0" failed="2" ignored="0" total="2" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="12792" started-at="2020-11-17T07:08:01Z" finished-at="2020-11-17T07:08:14Z">
+  <suite name="Default suite" duration-ms="15401" started-at="2020-11-18T12:23:09Z" finished-at="2020-11-18T12:23:24Z">
     <groups>
+      <group name="smokeTest">
+        <method signature="TC001_login.login()[pri:0, instance:testcases.TC001_login@5a8806ef]" name="login" class="testcases.TC001_login"/>
+      </group> <!-- smokeTest -->
     </groups>
-    <test name="Default test" duration-ms="12792" started-at="2020-11-17T07:08:01Z" finished-at="2020-11-17T07:08:14Z">
-      <class name="testDataSetup.TD001_Login">
-        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:testDataSetup.TD001_Login@7d0587f1]" name="beforeSuite" is-config="true" duration-ms="141" started-at="2020-11-17T07:08:01Z" finished-at="2020-11-17T07:08:01Z">
+    <test name="Default test" duration-ms="15401" started-at="2020-11-18T12:23:09Z" finished-at="2020-11-18T12:23:24Z">
+      <class name="testcases.TC001_login">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:testcases.TC001_login@5a8806ef]" name="beforeSuite" is-config="true" duration-ms="145" started-at="2020-11-18T12:23:08Z" finished-at="2020-11-18T12:23:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method status="PASS" signature="setData()[pri:0, instance:testDataSetup.TD001_Login@7d0587f1]" name="setData" is-config="true" duration-ms="0" started-at="2020-11-17T07:08:01Z" finished-at="2020-11-17T07:08:01Z">
+        <test-method status="PASS" signature="setData()[pri:0, instance:testcases.TC001_login@5a8806ef]" name="setData" is-config="true" duration-ms="0" started-at="2020-11-18T12:23:09Z" finished-at="2020-11-18T12:23:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setData -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:testDataSetup.TD001_Login@7d0587f1]" name="beforeMethod" is-config="true" duration-ms="6161" started-at="2020-11-17T07:08:01Z" finished-at="2020-11-17T07:08:07Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:testcases.TC001_login@5a8806ef]" name="beforeMethod" is-config="true" duration-ms="7365" started-at="2020-11-18T12:23:09Z" finished-at="2020-11-18T12:23:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="FAIL" signature="login(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testDataSetup.TD001_Login@7d0587f1]" name="login" duration-ms="661" started-at="2020-11-17T07:08:07Z" data-provider="fetchData" finished-at="2020-11-17T07:08:08Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Test001]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[sathisha231]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[123456]]>
-              </value>
-            </param>
-          </params>
+        <test-method status="FAIL" signature="login()[pri:0, instance:testcases.TC001_login@5a8806ef]" name="login" duration-ms="1634" started-at="2020-11-18T12:23:16Z" finished-at="2020-11-18T12:23:18Z">
           <exception class="java.lang.RuntimeException">
             <message>
               <![CDATA[FAILED]]>
@@ -44,9 +30,10 @@
             <full-stacktrace>
               <![CDATA[java.lang.RuntimeException: FAILED
 at utilities.Reporter.reportStep(Reporter.java:74)
-at utilities.GenericWrapper.webElementClick(GenericWrapper.java:186)
+at wrappers.GenericWrapper.webElementClick(GenericWrapper.java:189)
 at pages.LoginPage.clickLogin(LoginPage.java:41)
-at testDataSetup.TD001_Login.login(TD001_Login.java:31)
+at modules.ReusableModule.login(ReusableModule.java:24)
+at testcases.TC001_login.login(TC001_login.java:29)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -78,32 +65,15 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:testDataSetup.TD001_Login@7d0587f1]" name="afterMethod" is-config="true" duration-ms="5" started-at="2020-11-17T07:08:08Z" finished-at="2020-11-17T07:08:08Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:testcases.TC001_login@5a8806ef]" name="afterMethod" is-config="true" duration-ms="14" started-at="2020-11-18T12:23:18Z" finished-at="2020-11-18T12:23:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:testDataSetup.TD001_Login@7d0587f1]" name="beforeMethod" is-config="true" duration-ms="5047" started-at="2020-11-17T07:08:08Z" finished-at="2020-11-17T07:08:13Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:testcases.TC001_login@5a8806ef]" name="beforeMethod" is-config="true" duration-ms="5741" started-at="2020-11-18T12:23:18Z" finished-at="2020-11-18T12:23:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="FAIL" signature="login(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testDataSetup.TD001_Login@7d0587f1]" name="login" duration-ms="411" started-at="2020-11-17T07:08:13Z" data-provider="fetchData" finished-at="2020-11-17T07:08:14Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Test002]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[sathisha31a]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[123456]]>
-              </value>
-            </param>
-          </params>
+        <test-method status="FAIL" signature="login()[pri:0, instance:testcases.TC001_login@5a8806ef]" name="login" duration-ms="626" started-at="2020-11-18T12:23:23Z" finished-at="2020-11-18T12:23:24Z">
           <exception class="java.lang.RuntimeException">
             <message>
               <![CDATA[FAILED]]>
@@ -111,9 +81,10 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
             <full-stacktrace>
               <![CDATA[java.lang.RuntimeException: FAILED
 at utilities.Reporter.reportStep(Reporter.java:74)
-at utilities.GenericWrapper.webElementClick(GenericWrapper.java:186)
+at wrappers.GenericWrapper.webElementClick(GenericWrapper.java:189)
 at pages.LoginPage.clickLogin(LoginPage.java:41)
-at testDataSetup.TD001_Login.login(TD001_Login.java:31)
+at modules.ReusableModule.login(ReusableModule.java:24)
+at testcases.TC001_login.login(TC001_login.java:29)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -145,15 +116,15 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:testDataSetup.TD001_Login@7d0587f1]" name="afterMethod" is-config="true" duration-ms="0" started-at="2020-11-17T07:08:14Z" finished-at="2020-11-17T07:08:14Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:testcases.TC001_login@5a8806ef]" name="afterMethod" is-config="true" duration-ms="0" started-at="2020-11-18T12:23:24Z" finished-at="2020-11-18T12:23:24Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="afterSuite()[pri:0, instance:testDataSetup.TD001_Login@7d0587f1]" name="afterSuite" is-config="true" duration-ms="536" started-at="2020-11-17T07:08:14Z" finished-at="2020-11-17T07:08:14Z">
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:testcases.TC001_login@5a8806ef]" name="afterSuite" is-config="true" duration-ms="451" started-at="2020-11-18T12:23:24Z" finished-at="2020-11-18T12:23:24Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->
-      </class> <!-- testDataSetup.TD001_Login -->
+      </class> <!-- testcases.TC001_login -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

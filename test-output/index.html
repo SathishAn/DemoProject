@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
-                    <span>C:\Users\Dhiya\AppData\Local\Temp\testng-eclipse--1184913980\testng-customsuite.xml</span>
+                    <span>C:\Users\Dhiya\AppData\Local\Temp\testng-eclipse--1642845515\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -59,7 +59,7 @@
                 </li>
                 <li>
                   <a href="#" class="navigator-link " panel-name="group-Default_suite">
-                    <span>0 groups</span>
+                    <span>1 group</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -102,12 +102,12 @@
                     <div class="method-list-content failed suite-Default_suite">
                       <span>
                         <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="testDataSetup.TD001_Login" hash-for-method="login(Test002, sathisha31a, 123456)">login(Test002, sathisha31a, 123456)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="testcases.TC001_login" hash-for-method="login">login</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="testDataSetup.TD001_Login" hash-for-method="login(Test001, sathisha231, 123456)">login(Test001, sathisha231, 123456)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="testcases.TC001_login" hash-for-method="login">login</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Default_suite -->
@@ -125,20 +125,20 @@
           <div class="suite-Default_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">testDataSetup.TD001_Login</span>
+              <span class="class-name">testcases.TC001_login</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="login(Test002, sathisha31a, 123456)">
-                  </a> <!-- login(Test002, sathisha31a, 123456) -->
+                  <a name="login">
+                  </a> <!-- login -->
                   <span class="method-name">login</span>
-                  <span class="parameters">(Test002, sathisha31a, 123456)</span>
                   <div class="stack-trace">java.lang.RuntimeException: FAILED
 	at utilities.Reporter.reportStep(Reporter.java:74)
-	at utilities.GenericWrapper.webElementClick(GenericWrapper.java:186)
+	at wrappers.GenericWrapper.webElementClick(GenericWrapper.java:189)
 	at pages.LoginPage.clickLogin(LoginPage.java:41)
-	at testDataSetup.TD001_Login.login(TD001_Login.java:31)
+	at modules.ReusableModule.login(ReusableModule.java:24)
+	at testcases.TC001_login.login(TC001_login.java:29)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -170,15 +170,15 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="login(Test001, sathisha231, 123456)">
-                  </a> <!-- login(Test001, sathisha231, 123456) -->
+                  <a name="login">
+                  </a> <!-- login -->
                   <span class="method-name">login</span>
-                  <span class="parameters">(Test001, sathisha231, 123456)</span>
                   <div class="stack-trace">java.lang.RuntimeException: FAILED
 	at utilities.Reporter.reportStep(Reporter.java:74)
-	at utilities.GenericWrapper.webElementClick(GenericWrapper.java:186)
+	at wrappers.GenericWrapper.webElementClick(GenericWrapper.java:189)
 	at pages.LoginPage.clickLogin(LoginPage.java:41)
-	at testDataSetup.TD001_Login.login(TD001_Login.java:31)
+	at modules.ReusableModule.login(ReusableModule.java:24)
+	at testcases.TC001_login.login(TC001_login.java:29)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -213,7 +213,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Dhiya\AppData\Local\Temp\testng-eclipse--1184913980\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\Dhiya\AppData\Local\Temp\testng-eclipse--1642845515\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -222,7 +222,7 @@
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Default suite&quot;&gt;
   &lt;test thread-count=&quot;5&quot; verbose=&quot;2&quot; name=&quot;Default test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;testDataSetup.TD001_Login&quot;/&gt;
+      &lt;class name=&quot;testcases.TC001_login&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -246,6 +246,14 @@
             <span class="header-content">Groups for Default suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">smokeTest</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">login</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="times-Default_suite" class="panel">
@@ -265,17 +273,17 @@ data.addColumn('number', 'Time (ms)');
 data.addRows(2);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'login')
-data.setCell(0, 2, 'testDataSetup.TD001_Login')
-data.setCell(0, 3, 661);
+data.setCell(0, 2, 'testcases.TC001_login')
+data.setCell(0, 3, 1634);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'login')
-data.setCell(1, 2, 'testDataSetup.TD001_Login')
-data.setCell(1, 3, 411);
+data.setCell(1, 2, 'testcases.TC001_login')
+data.setCell(1, 3, 626);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 seconds</span>
+              <span class="suite-total-time">Total running time: 2 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -301,7 +309,7 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">testDataSetup.TD001_Login</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">testcases.TC001_login</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
                 <span class="method-name">beforeSuite</span>
                 <span class="method-start">0 ms</span>
@@ -312,35 +320,35 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod</span>
-                <span class="method-start">631 ms</span>
+                <span class="method-start">155 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">login(Test001, sathisha231, 123456)</span>
-                <span class="method-start">6792 ms</span>
+                <span class="method-name">login</span>
+                <span class="method-start">7520 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">7463 ms</span>
+                <span class="method-start">9156 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod</span>
-                <span class="method-start">7468 ms</span>
+                <span class="method-start">9170 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">login(Test002, sathisha31a, 123456)</span>
-                <span class="method-start">12515 ms</span>
+                <span class="method-name">login</span>
+                <span class="method-start">14912 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">12931 ms</span>
+                <span class="method-start">15538 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-suite after">
                 <span class="method-name">afterSuite</span>
-                <span class="method-start">12981 ms</span>
+                <span class="method-start">15601 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
